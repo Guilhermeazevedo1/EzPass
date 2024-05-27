@@ -1,8 +1,8 @@
 .login_container {
     display: flex;
     min-height: 100vh;
-    width: 100%;
-    
+    width: 100vw;
+    background-color: #fff;
 }
   
 
@@ -13,10 +13,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
     flex: 1;
     text-align: center;
-    gap: 5.43vw;
+    gap: 3.43vw;
   }
   
 .login_forms {
@@ -36,6 +36,7 @@
     text-align: center;
     margin-top: 7.14vh;
     margin-bottom: 1.55vh;
+    color: #000;
 }
   
 .link_login {
@@ -58,21 +59,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../../assets/login_background.svg");
     background-repeat: no-repeat;
     padding: 2rem;
     color: #fff;
-    flex: 2;
+    flex: 1;
+    background-color: #7d53bd;
 }
   
-.background_login p {
-    height: 90px;
-    width: 521px;
-    font-size: 2.2rem;
-    font-weight: bold;
-    font-family: "Source Serif Pro";
-    text-align: center;
-}
   
 .background_login img {
     width: 500px;

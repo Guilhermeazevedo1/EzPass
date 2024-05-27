@@ -8,8 +8,8 @@ interface ButtonProps{
 
 export default function ButtonUsage({nomeButton}: ButtonProps){
     return(
-        <>
-            <Button variant="contained">{nomeButton}</Button>
-        </>
+        <div>
+            <Button variant="contained" size="large" className="button">{nomeButton}</Button>
+        </div>
     )
 }

@@ -1,0 +1,15 @@
+.logo{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+    
+}
+
+.logo img{
+    width: 11.43vw;
+}
+
+
+.textologo{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}

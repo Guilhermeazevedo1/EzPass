@@ -4,20 +4,26 @@ import "./Styles/Login.css";
 import ButtonUsage from "../components/Button";
 import ButtonText from "../components/ButtonText";
 import Input from "../components/Input";
+import BgLogin from "../assets/ImagemBgLogin.svg"
+import Logo from "../components/Logo"
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  const handleSumit = () => {
+    navigate("/cadastro");
+  };
 
   return (
     <div className="login_container">
       <section className="login_forms_container">
-        {/* LogoEzPass <KomuLogo /> */}
+        <Logo/>
         <form className="login_forms" action="">
-          <Input InputText={"Email"} type={"Email"}/>
-          <Input InputText={"Senha"} type={"Password"}/>
+          <Input InputText={"Email"} type={"Email"} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}/>
+  
+          <Input InputText={"Senha"} type={"Password"} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}/>
           <Link to={"/home"}>
             <ButtonUsage nomeButton={"Entrar"}/>
           </Link>
@@ -30,7 +36,7 @@ export default function Login() {
         </form>
       </section>
       <section className="background_login">
-        
+        <img src={BgLogin} alt="" />
         
       </section>
     </div>
